@@ -3,7 +3,8 @@
 import argparse
 import utils.distributed as dist
 import utils.tools as tools
-
+import os
+os.environ['CUDA_VISIBLE_DEVICES'] = '3'
 
 parser = argparse.ArgumentParser(description='DMCP Implementation')
 parser.add_argument('-C', '--config', required=True)

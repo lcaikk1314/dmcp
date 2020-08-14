@@ -50,7 +50,7 @@ recover:
     checkpoint: None
 
 distributed:
-    enable: True
+    enable: False
 
 optimizer:
     momentum: 0.9

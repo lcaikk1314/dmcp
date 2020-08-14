@@ -79,14 +79,14 @@ def get_image_net(config):
     transform_train.append(transforms.ToTensor())
     transform_train.append(normalize)
 
-    train_dir = os.path.join(config.path, 'train')
+    train_dir = os.path.join(config.path, 'ILSVRC2012_img_train')
     train_dataset = datasets.ImageFolder(
         train_dir,
         transforms.Compose(transform_train)
     )
 
     # val
-    val_dir = os.path.join(config.path, 'val')
+    val_dir = os.path.join(config.path, 'ILSVRC2012_img_val')
     val_dataset = datasets.ImageFolder(
         val_dir,
         transforms.Compose([
